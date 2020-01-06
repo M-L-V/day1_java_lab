@@ -23,10 +23,10 @@ public class CalculatorTest {
         assertEquals(5, calculator.subtract(10,5), 0.01);
     }
 //
-//    @Test
-//    public void multiply(){
-//        assertEquals(10, calculator.multiply(2,5), 0.01);
-//    }
+    @Test
+    public void multiply(){
+        assertEquals(10, calculator.multiply(2,5), 0.01);
+    }
 //
 //    @Test
 //    public void divide(){
