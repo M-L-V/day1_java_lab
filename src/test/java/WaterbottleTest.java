@@ -25,6 +25,14 @@ public class WaterbottleTest {
     }
 
     @Test
+    public void drinkMultiplyTimes(){
+        waterbottle.drink();
+        waterbottle.drink();
+        waterbottle.drink();
+        assertEquals(70, waterbottle.getVolume(), 0.01);
+    }
+
+    @Test
     public void empty(){
         waterbottle.empty();
         assertEquals(0, waterbottle.getVolume(), 0.01);
