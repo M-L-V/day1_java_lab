@@ -18,10 +18,10 @@ public class CalculatorTest {
         assertEquals(10, calculator.add(5,5), 0.01);
     }
 
-//    @Test
-//    public void subtract(){
-//        assertEquals(5, calculator.subtract(10,5), 0.01);
-//    }
+    @Test
+    public void subtract(){
+        assertEquals(5, calculator.subtract(10,5), 0.01);
+    }
 //
 //    @Test
 //    public void multiply(){
