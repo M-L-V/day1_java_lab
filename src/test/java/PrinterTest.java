@@ -17,6 +17,17 @@ public class PrinterTest {
         assertEquals(100, printer.paperAmount());
     }
 
+    @Test
+    public void printIfEnoughPaper(){
+        printer.print(10,2);
+        assertEquals(80, printer.paperAmount());
+    }
+
+    @Test
+    public void printIfNotEnoughPaper(){
+        printer.print(150, 2);
+        assertEquals(100, printer.paperAmount());
+    }
 
 
 }
