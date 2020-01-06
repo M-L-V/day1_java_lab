@@ -1,9 +1,11 @@
 public class Printer {
 
     private int paperAmount;
+    private int tonerVolume;
 
-    public Printer(int paperAmount){
+    public Printer(int paperAmount, int tonerVolume){
         this.paperAmount = paperAmount;
+        this.tonerVolume = tonerVolume;
     }
 
     public int paperAmount(){
@@ -17,5 +19,8 @@ public class Printer {
         }
     }
 
+    public int tonerVolume(){
+        return this.tonerVolume;
+    }
 }
 
