@@ -28,8 +28,8 @@ public class CalculatorTest {
         assertEquals(10, calculator.multiply(2,5), 0.01);
     }
 //
-//    @Test
-//    public void divide(){
-//        assertEquals(2, calculator.divide(10,5), 0.01);
-//    }
+    @Test
+    public void divide(){
+        assertEquals(2, calculator.divide(10,5), 0.01);
+    }
 }
