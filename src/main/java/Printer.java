@@ -13,9 +13,10 @@ public class Printer {
     }
 
     public void print(int pageNum, int copiesNum){
-        if (this.paperAmount >= (pageNum * copiesNum)) {
-            this.paperAmount -= (pageNum * copiesNum);
-
+        int pageNumToPrint = pageNum * copiesNum;
+        if (this.paperAmount >= pageNumToPrint){
+            this.paperAmount -= pageNumToPrint;
+            this.tonerVolume -= pageNumToPrint;
         }
     }
 
